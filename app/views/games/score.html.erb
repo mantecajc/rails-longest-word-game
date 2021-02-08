@@ -1,0 +1,5 @@
+<h1>Result</h1>
+<%= @answer_splitted.all? { |x| @answer_splitted.count(x) <= @letters.count(x) } %>
+<%= @user["found"] %>
+<p><%= @result %></p>
+<%= link_to "Play again", new_path %>
